@@ -31,6 +31,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <componentGroupName>ADOBE-DAM</componentGroupName>
         <uber-jar.version>6.5.22</uber-jar.version>
+        <keyname>33C0330C91FCC3C1</keyname>
     </properties>
     <developers>
         <developer>
@@ -68,6 +69,15 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <keyname>${keyname}</keyname>
+                    <gpgArguments>
+                        <arg>--batch</arg>
+                        <arg>--yes</arg>
+                        <arg>--pinentry-mode</arg>
+                        <arg>loopback</arg>
+                    </gpgArguments>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.sonatype.central</groupId>
