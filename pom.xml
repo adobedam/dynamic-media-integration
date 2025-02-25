@@ -84,8 +84,18 @@
                 <artifactId>central-publishing-maven-plugin</artifactId>
                 <version>0.7.0</version>
                 <extensions>true</extensions>
+                <executions>
+                    <execution>
+                        <id>deploy-artifacts</id>
+                        <phase>deploy</phase>
+                        <goals>
+                            <goal>publish</goal>
+                        </goals>
+                    </execution>
+                </executions>
                 <configuration>
                     <publishingServerId>central</publishingServerId>
+                    <centralBaseUrl>https://central.sonatype.com</centralBaseUrl>
                     <autoPublish>true</autoPublish>
                     <waitUntil>published</waitUntil>
                 </configuration>
