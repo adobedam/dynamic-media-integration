@@ -34,13 +34,13 @@
     </properties>
     <developers>
         <developer>
-            <id>sharadtech</id>
-            <name>Your Name</name>
-            <email>your-email@example.com</email>
-            <url>https://github.com/your-profile</url>
+            <id>adobedam</id>
+            <name>Administrator Adobe DAM</name>
+            <email>admin@adobedam.com</email>
+            <url>https://github.com/adobedam</url>
         </developer>
     </developers>
-    <url>https://github.com/your-github-repo</url>
+    <url>https://github.com/adobedam/dynamic-media-integration</url>
     <licenses>
         <license>
             <name>Apache License 2.0</name>
@@ -49,12 +49,26 @@
         </license>
     </licenses>
     <scm>
-        <url>https://github.com/your-github-repo</url>
-        <connection>scm:git:https://github.com/your-github-repo.git</connection>
-        <developerConnection>scm:git:git@github.com:your-github-repo.git</developerConnection>
+        <url>https://github.com/adobedam/dynamic-media-integration</url>
+        <connection>scm:git:https://github.com/adobedam/dynamic-media-integration.git</connection>
+        <developerConnection>scm:git:git@github.com:adobedam/dynamic-media-integration.git</developerConnection>
     </scm>
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.6</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.sonatype.central</groupId>
                 <artifactId>central-publishing-maven-plugin</artifactId>
