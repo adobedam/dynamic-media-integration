@@ -11,7 +11,7 @@
     <groupId>com.adobedam</groupId>
     <artifactId>dms-integration.parent</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.1</version>
+    <version>1.0.2-SNAPSHOT</version>
     <name>${project.groupId}:${project.artifactId}</name>
     <description>Dynamic Media Integration Services : Parent</description>
     <modules>
@@ -44,7 +44,7 @@
         <url>https://github.com/adobedam/dynamic-media-integration</url>
         <connection>scm:git:git@github.com:adobedam/dynamic-media-integration.git</connection>
         <developerConnection>scm:git:git@github.com:adobedam/dynamic-media-integration.git</developerConnection>
-        <tag>dms-integration.parent-1.0.1</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <build>
